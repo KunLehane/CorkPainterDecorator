@@ -185,6 +185,10 @@ strong { font-weight: 600; }
 .photo-frame-wide { aspect-ratio: 16 / 9; }
 .photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; border-radius: var(--radius-photo); border: 1px solid var(--line-100); object-fit: cover; }
 .photo-inline { margin: 1.5rem 0; max-width: 420px; aspect-ratio: auto; }
+.photo-band { aspect-ratio: 21 / 9; margin: 0 0 2rem; }
+.photo-side { margin-top: 1.5rem; max-width: 460px; aspect-ratio: auto; }
+.photo-caption { font-size: .95rem; color: var(--ink-muted); margin-top: .6rem; max-width: 460px; }
+@media (max-width: 700px) { .photo-band { aspect-ratio: 4 / 3; } }
 .work-slot { margin: 0; }
 .work-slot figcaption { margin-top: 10px; font-size: .92rem; color: var(--ink-muted); }
 
