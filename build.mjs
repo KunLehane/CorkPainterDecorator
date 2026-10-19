@@ -2,7 +2,13 @@
 // adds JSON-LD, writes dist/, sitemap.xml and robots.txt.
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import { SITE_URL, SITE_NAME, PHONE, WHATSAPP, EMAIL } from './src/config.mjs';
+
+// Content hash on CSS and JS so each deploy bypasses old browser caches.
+const ver = async f => crypto.createHash('sha1').update(await fs.readFile(f)).digest('hex').slice(0, 8);
+const CSS_V = await ver('public/site.css');
+const JS_V = await ver('public/site.js');
 
 const pages = JSON.parse(await fs.readFile('src/pages.json', 'utf8'));
 const header = await fs.readFile('src/partials/header.html', 'utf8');
@@ -130,8 +136,8 @@ ${robots}<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${FONTS}">
-<link rel="stylesheet" href="/site.css">
-<script src="/site.js" defer></script>
+<link rel="stylesheet" href="/site.css?v=${CSS_V}">
+<script src="/site.js?v=${JS_V}" defer></script>
 ${ld}
 </head>
 <body class="page-${p.type}">
