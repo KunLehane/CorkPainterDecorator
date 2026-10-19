@@ -16,3 +16,18 @@
     }
   });
 })();
+
+// Before and after sliders: the range input sets how much of the before photo shows.
+(function () {
+  var figs = document.querySelectorAll('[data-ba]');
+  for (var i = 0; i < figs.length; i++) {
+    (function (fig) {
+      var frame = fig.querySelector('.ba-frame');
+      var range = fig.querySelector('.ba-range');
+      if (!frame || !range) return;
+      var set = function () { frame.style.setProperty('--pos', range.value + '%'); };
+      range.addEventListener('input', set);
+      set();
+    })(figs[i]);
+  }
+})();

@@ -92,6 +92,15 @@
     ]
   },
   {
+    "path": "/our-work/",
+    "file": "our-work.html",
+    "type": "page",
+    "title": "Our Work | Before and After Painting Photos, Cork",
+    "description": "Before and after photos from real painting jobs in Cork: an exterior repaint, bedrooms and feature walls. See the finish, then get a written price.",
+    "crumbs": [],
+    "crumbName": "Our work"
+  },
+  {
     "path": "/quote/",
     "file": "quote.html",
     "type": "page",
