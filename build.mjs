@@ -56,7 +56,7 @@ function schemaFor(p) {
         { '@type': 'City', name: 'Cork' },
         { '@type': 'AdministrativeArea', name: 'County Cork' },
       ],
-      knowsAbout: ['Interior painting', 'Exterior painting', 'Wallpapering'],
+      knowsAbout: ['Interior painting', 'Exterior painting', 'Wallpapering', 'Kitchen cabinet painting', 'Commercial painting'],
     };
     // Only published once the values in src/config.mjs are filled in.
     if (PHONE) biz.telephone = PHONE;

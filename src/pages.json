@@ -58,6 +58,40 @@
     ]
   },
   {
+    "path": "/kitchen-cabinet-painting/",
+    "file": "kitchen-cabinet-painting.html",
+    "type": "service",
+    "title": "Kitchen Cabinet Painting Cork | Doors, Units and Islands",
+    "description": "Kitchen cabinet painting in Cork city and county. Doors, drawer fronts, end panels and islands, degreased, keyed and primed before the finish coats.",
+    "crumbs": [],
+    "crumbName": "Kitchen cabinet painting",
+    "service": { "name": "Kitchen cabinet painting", "serviceType": "Kitchen cabinet painting and spraying" },
+    "faq": [
+      { "q": "How long does it take?", "a": "It depends on the number of doors and drawer fronts, the surface and how much prep they need. You get a timeline with the written quote." },
+      { "q": "Can I use the kitchen during the job?", "a": "Partly. While doors are off the cupboards are open and some areas are masked, but you can usually still get at the sink and fridge. We tell you which days are most disruptive when we agree the date." },
+      { "q": "Can you paint laminate or foil doors?", "a": "Some, yes, with the right adhesion primer. Foil that is lifting, peeling or damaged is not suitable, and we will tell you at quote stage if your doors are in that group. A close-up photo of the surface helps." },
+      { "q": "Can you match a colour I have picked?", "a": "Yes. Give us the colour name and brand, or a sample, and we use that. If you ask us to supply the paint it goes on the quote as its own line." },
+      { "q": "Do you change handles?", "a": "Yes. We can fit new handles you supply when the doors go back on. If the new handles use different hole spacing, tell us at quote stage so the filling and drilling is included." }
+    ]
+  },
+  {
+    "path": "/commercial-painting/",
+    "file": "commercial-painting.html",
+    "type": "service",
+    "title": "Commercial Painting Cork | Offices, Shops and Rentals",
+    "description": "Commercial painting in Cork. Offices, shops, cafes, rentals and apartment common areas, with a written price and evening or weekend work by arrangement.",
+    "crumbs": [],
+    "crumbName": "Commercial painting",
+    "service": { "name": "Commercial painting", "serviceType": "Commercial painting and decorating" },
+    "faq": [
+      { "q": "Can you work evenings or weekends?", "a": "By arrangement. Tell us your opening hours when you ask for a quote." },
+      { "q": "Do you do landlord and end-of-tenancy repaints?", "a": "Yes. Tell us the dates between tenants and send photos of each room, and the quote will say whether the work fits that gap." },
+      { "q": "Do you provide a written quote and invoice?", "a": "Yes. Every job gets a written price before it starts and a written invoice when it is finished." },
+      { "q": "Can you work around staff and customers?", "a": "Yes. We agree working areas and hours with you first, work in sections, keep walkways clear and use low-odour paints where people are nearby." },
+      { "q": "Do you paint common areas in apartment blocks?", "a": "Yes. Halls, stairwells and landings. We can deal with the management company directly and plan the work so residents can still get in and out." }
+    ]
+  },
+  {
     "path": "/quote/",
     "file": "quote.html",
     "type": "page",
