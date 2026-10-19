@@ -1,0 +1,41 @@
+<form class="lead-form" method="post" action="/api/submit">
+  <input type="hidden" name="form-name" value="{{FORM_NAME}}">
+  <div class="hp" aria-hidden="true">
+    <label for="{{FORM_NAME}}-hp">Leave this field empty</label>
+    <input id="{{FORM_NAME}}-hp" type="text" name="company-website" tabindex="-1" autocomplete="off">
+  </div>
+  <div class="field-row">
+    <div class="field">
+      <label for="{{FORM_NAME}}-name">Your name <span class="req" aria-hidden="true">*</span></label>
+      <input id="{{FORM_NAME}}-name" type="text" name="name" autocomplete="name" required>
+    </div>
+    <div class="field">
+      <label for="{{FORM_NAME}}-phone">Phone <span class="req" aria-hidden="true">*</span></label>
+      <input id="{{FORM_NAME}}-phone" type="tel" name="phone" autocomplete="tel" required>
+    </div>
+  </div>
+  <div class="field-row">
+    <div class="field">
+      <label for="{{FORM_NAME}}-email">Email</label>
+      <input id="{{FORM_NAME}}-email" type="email" name="email" autocomplete="email">
+    </div>
+    <div class="field">
+      <label for="{{FORM_NAME}}-area">Area <span class="req" aria-hidden="true">*</span></label>
+      <input id="{{FORM_NAME}}-area" type="text" name="area" placeholder="Douglas, Ballincollig, Midleton" autocomplete="address-level2" required>
+    </div>
+  </div>
+  <div class="field">
+    <label for="{{FORM_NAME}}-message">What needs painting? <span class="req" aria-hidden="true">*</span></label>
+    <textarea id="{{FORM_NAME}}-message" name="message" rows="5" placeholder="Which rooms or walls, inside or outside, roughly what size, and when you would like it done" required></textarea>
+  </div>
+  <div class="field">
+    <label for="{{FORM_NAME}}-paint">Paint supplied by</label>
+    <select id="{{FORM_NAME}}-paint" name="paint_supplied">
+      <option value="">Not sure yet</option>
+      <option value="you">You (the customer)</option>
+      <option value="us">Us (shown as its own line on the quote)</option>
+    </select>
+  </div>
+  <button class="btn btn-primary btn-block" type="submit">Send and get a written price</button>
+  <p class="form-note">Photos help us price it faster.{{#WA_URL}} You can send them by <a href="{{WA_URL}}" rel="noopener" target="_blank">WhatsApp</a>.{{/WA_URL}}{{^WA_URL}} You can send them by WhatsApp once we reply.{{/WA_URL}} We use your details only to reply to you. See the <a href="/privacy/">privacy notice</a>.</p>
+</form>

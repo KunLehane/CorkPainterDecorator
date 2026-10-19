@@ -1,0 +1,21 @@
+<section class="page-hero">
+  <div class="container split">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h1>Get in Touch</h1>
+      <p class="lead">For a price on a painting or wallpapering job, the quickest route is the <a href="/quote/">quote form</a>{{#WA_URL}} or a photo by WhatsApp{{/WA_URL}}. For anything else, use the form below.</p>
+      <ul class="check-list">
+        {{#WA_URL}}<li>WhatsApp: <a href="{{WA_URL}}" rel="noopener" target="_blank">message us</a></li>{{/WA_URL}}
+        {{#TEL_URL}}<li>Phone: <a href="{{TEL_URL}}">{{PHONE}}</a></li>{{/TEL_URL}}
+        {{#EMAIL}}<li>Email: <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></li>{{/EMAIL}}
+        <li>Covering Cork city and county. See the <a href="/areas/">areas we cover</a>.</li>
+      </ul>
+      {{^CONTACT}}<p class="muted">Phone, WhatsApp and email details are being added. The form reaches us straight away.</p>{{/CONTACT}}
+    </div>
+    <div class="form-wrap">
+      <h2>Send a message</h2>
+      <p class="muted">Fields marked * are required.</p>
+      {{form:contact}}
+    </div>
+  </div>
+</section>

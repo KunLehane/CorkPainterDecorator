@@ -1,0 +1,121 @@
+[
+  {
+    "path": "/",
+    "file": "index.html",
+    "type": "home",
+    "title": "Painter and Decorator Cork | Cork Painter Decorator",
+    "description": "Painting and decorating in Cork city and county. A written price before we start, prep included, two coats as standard, and the room left as we found it."
+  },
+  {
+    "path": "/interior-painting/",
+    "file": "interior-painting.html",
+    "type": "service",
+    "title": "Interior Painting Cork | Walls, Ceilings and Woodwork",
+    "description": "Interior painting in Cork city and county. Walls, ceilings, doors, skirting and stairs. Filling and sanding included, floors covered, two coats as standard.",
+    "crumbs": [],
+    "crumbName": "Interior painting",
+    "service": { "name": "Interior painting", "serviceType": "Interior painting and decorating" },
+    "faq": [
+      { "q": "How long does a room take?", "a": "A standard bedroom or sitting room, walls and ceiling, is usually one to two days including prep and drying time between coats. Woodwork adds time. We give you a day count with the written price." },
+      { "q": "Do we need to move the furniture?", "a": "Move what you can, especially small and breakable things. Large pieces can stay. We move them to the middle of the room and cover them, then put them back when we finish." },
+      { "q": "Is paint included in the price?", "a": "Either way. We can supply the paint and show it as its own line on the quote, or you buy it and we paint with it. Say which you prefer when you ask for a quote." },
+      { "q": "Can you match an existing colour?", "a": "Usually, yes. If you have the tin or the colour name we use that. If not, a small sample from an area that will not be seen can be matched at a paint supplier." },
+      { "q": "Do you work weekends?", "a": "Ask when you request a quote and we will tell you what is possible for your dates." }
+    ]
+  },
+  {
+    "path": "/exterior-painting/",
+    "file": "exterior-painting.html",
+    "type": "service",
+    "title": "Exterior Painting Cork | Masonry, Render and Woodwork",
+    "description": "Exterior painting in Cork city and county. Masonry, render, fascia, soffit, doors and windows. Surfaces washed and prepared first, two coats as standard.",
+    "crumbs": [],
+    "crumbName": "Exterior painting",
+    "service": { "name": "Exterior painting", "serviceType": "Exterior house painting" },
+    "faq": [
+      { "q": "How long does the outside of a house take?", "a": "A typical semi-detached house is usually two to four days of painting, depending on the size, the condition of the walls and the weather. We give you a day count with the written price." },
+      { "q": "What about the weather?", "a": "Masonry paint needs dry surfaces and a dry spell to cure. If rain comes in we stop and come back. Exterior dates are always subject to weather and we keep you posted." },
+      { "q": "Is paint included in the price?", "a": "Either way. We can supply the masonry and trim paint and show it as its own line on the quote, or you buy it and we paint with it." },
+      { "q": "Can you match the existing colour?", "a": "Usually, yes. If you know the colour name or have the tin we use that. If not, a paint supplier can match a sample. Weathered paint fades, so a full repaint in the matched colour will look fresher than the old finish." },
+      { "q": "Do you work weekends?", "a": "Ask when you request a quote and we will tell you what is possible for your dates." }
+    ]
+  },
+  {
+    "path": "/wallpapering/",
+    "file": "wallpapering.html",
+    "type": "service",
+    "title": "Wallpapering Cork | Hanging, Stripping and Lining",
+    "description": "Wallpapering in Cork city and county. Feature walls and full rooms, old paper stripped, walls lined where needed, patterns matched, edges clean.",
+    "crumbs": [],
+    "crumbName": "Wallpapering",
+    "service": { "name": "Wallpapering", "serviceType": "Wallpaper hanging and stripping" },
+    "faq": [
+      { "q": "How long does a feature wall take?", "a": "A single feature wall is usually a day, including prep. A full room is longer, and stripping old paper adds time. We give you a day count with the written price." },
+      { "q": "Do we need to move the furniture?", "a": "Clear the wall being papered if you can. Anything else can stay and we cover it." },
+      { "q": "Is the wallpaper included?", "a": "You choose and buy the paper so you get exactly what you want. Tell us the roll width, pattern repeat and the wall size and we will say how many rolls to order. Paste and lining paper we can supply and show on the quote." },
+      { "q": "Can you paper over old wallpaper?", "a": "We do not recommend it. Old paper is stripped, the wall is washed and filled, and lining paper goes on where the wall needs it. That is what gives a flat finish that stays up." },
+      { "q": "Do you work weekends?", "a": "Ask when you request a quote and we will tell you what is possible for your dates." }
+    ]
+  },
+  {
+    "path": "/quote/",
+    "file": "quote.html",
+    "type": "page",
+    "title": "Get a Painting Quote in Cork | Cork Painter Decorator",
+    "description": "Ask for a written painting quote in Cork. Tell us what needs painting and where, send photos by WhatsApp if you like, and get a price before any work starts.",
+    "crumbs": [],
+    "crumbName": "Get a quote"
+  },
+  {
+    "path": "/areas/",
+    "file": "areas.html",
+    "type": "page",
+    "title": "Areas We Cover in Cork | Cork Painter Decorator",
+    "description": "Painting and decorating across Cork city and county, from Douglas, Ballincollig and Glanmire to Midleton, Mallow, Bandon and Kinsale.",
+    "crumbs": [],
+    "crumbName": "Areas we cover"
+  },
+  {
+    "path": "/about/",
+    "file": "about.html",
+    "type": "page",
+    "title": "About Cork Painter Decorator | What to Expect",
+    "description": "What to expect when Cork Painter Decorator paints your home: a written price first, proper prep, tidy work, and a walk-through at the end.",
+    "crumbs": [],
+    "crumbName": "About"
+  },
+  {
+    "path": "/contact/",
+    "file": "contact.html",
+    "type": "page",
+    "title": "Contact Cork Painter Decorator",
+    "description": "Get in touch about painting or wallpapering in Cork city and county. Send a message, or ask for a written quote.",
+    "crumbs": [],
+    "crumbName": "Contact"
+  },
+  {
+    "path": "/privacy/",
+    "file": "privacy.html",
+    "type": "page",
+    "title": "Privacy Notice | Cork Painter Decorator",
+    "description": "How Cork Painter Decorator uses the details you send through this website, how long they are kept, and your rights under GDPR.",
+    "crumbs": [],
+    "crumbName": "Privacy"
+  },
+  {
+    "path": "/thanks/",
+    "file": "thanks.html",
+    "type": "page",
+    "noindex": true,
+    "title": "Thanks, We Have Your Request",
+    "description": "Thanks for sending your details to Cork Painter Decorator. We will come back to you with a written price."
+  },
+  {
+    "path": "/404/",
+    "file": "404.html",
+    "type": "page",
+    "noindex": true,
+    "title": "Page Not Found | Cork Painter Decorator",
+    "description": "That page is not here. Try the services, areas or quote pages instead."
+  }
+]

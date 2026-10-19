@@ -1,0 +1,39 @@
+<section class="page-hero">
+  <div class="container split">
+    <div>
+      <p class="eyebrow">Get a quote</p>
+      <h1>A Price Before We Start</h1>
+      <p class="lead">Tell us what needs painting and where. We come back with a written price by WhatsApp or email, or arrange to see the job first if it is easier.</p>
+      <h2 class="h3">What helps us price it</h2>
+      <ul class="check-list">
+        <li>Which rooms or walls, inside or outside</li>
+        <li>A rough size, or the number of rooms</li>
+        <li>Whether you are supplying the paint</li>
+        <li>Photos of the walls, ceilings and woodwork{{#WA_URL}}, sent by <a href="{{WA_URL}}" rel="noopener" target="_blank">WhatsApp</a>{{/WA_URL}}</li>
+        <li>When you would like it done</li>
+      </ul>
+      {{#CONTACT}}
+      <p class="muted">Prefer to talk?{{#TEL_URL}} Call <a href="{{TEL_URL}}">{{PHONE}}</a>.{{/TEL_URL}}{{#EMAIL}} Or email <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>.{{/EMAIL}}</p>
+      {{/CONTACT}}
+    </div>
+    <div class="form-wrap">
+      <h2>Request a written quote</h2>
+      <p class="muted">Fields marked * are required.</p>
+      {{form:quote}}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container narrow">
+    <div class="section-head">
+      <h2>What happens next</h2>
+    </div>
+    <ol>
+      <li>We read your message and look at any photos.</li>
+      <li>If we have questions, we ask them. If we need to see the job, we arrange a time.</li>
+      <li>You get a written price. Paint is shown as its own line if we are supplying it.</li>
+      <li>If you are happy, we agree a date. Nothing starts until you say yes.</li>
+    </ol>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="Cork Painter Decorator home">
+      <img class="brand-mark" src="/logo.svg" width="40" height="40" alt="">
+      <span class="brand-text">Cork Painter <span>Decorator</span></span>
+    </a>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a class="nav-link" href="/interior-painting/">Interior</a></li>
+        <li><a class="nav-link" href="/exterior-painting/">Exterior</a></li>
+        <li><a class="nav-link" href="/wallpapering/">Wallpapering</a></li>
+        <li><a class="nav-link" href="/areas/">Areas</a></li>
+        <li><a class="nav-link" href="/about/">About</a></li>
+        <li><a class="nav-link" href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      {{#TEL_URL}}<a class="header-phone" href="{{TEL_URL}}">{{PHONE}}</a>{{/TEL_URL}}
+      <a class="btn btn-primary btn-sm" href="/quote/">Get a quote</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
