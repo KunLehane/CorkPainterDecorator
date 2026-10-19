@@ -183,6 +183,8 @@ strong { font-weight: 600; }
 .photo-frame { aspect-ratio: 4 / 3; border-radius: var(--radius-photo); background: var(--surface-100); border: 1px solid var(--line-100); }
 .photo-frame-tall { aspect-ratio: 3 / 4; }
 .photo-frame-wide { aspect-ratio: 16 / 9; }
+.photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; border-radius: var(--radius-photo); border: 1px solid var(--line-100); object-fit: cover; }
+.photo-inline { margin: 1.5rem 0; max-width: 420px; aspect-ratio: auto; }
 .work-slot { margin: 0; }
 .work-slot figcaption { margin-top: 10px; font-size: .92rem; color: var(--ink-muted); }
 
