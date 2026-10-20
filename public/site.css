@@ -337,3 +337,9 @@ strong { font-weight: 600; }
 .work-pairs { display: grid; gap: 40px; }
 @media (min-width: 900px) { .work-pairs { grid-template-columns: 1fr 1fr; gap: 32px; } .work-pairs .ba + .ba { margin-top: 0; } }
 .proof-note { font-size: .95rem; color: var(--ink-muted); margin-top: 24px; }
+
+/* Hero proof link: real job photo above the fold on mobile */
+.hero-proof { display: flex; align-items: center; gap: 12px; margin-top: 22px; color: var(--ink); text-decoration: none; font-weight: 600; }
+.hero-proof img { width: 76px; height: 57px; object-fit: cover; border-radius: var(--radius-photo); border: 1px solid var(--line-100); flex: none; }
+.hero-proof span { border-bottom: 2px solid var(--red-700); line-height: 1.3; }
+.hero-proof:hover span { color: var(--red-700); }
