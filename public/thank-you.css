@@ -1,0 +1,12 @@
+.thanks-main{background:#fff}
+.thanks{max-width:1140px;margin:0 auto;padding:clamp(56px,9vw,120px) 24px clamp(72px,12vw,150px)}
+.thanks-eyebrow{font-weight:800;letter-spacing:.14em;font-size:14px;color:#153a6b;margin:0 0 16px}
+.thanks h1{text-transform:none;font-size:clamp(52px,8vw,96px);line-height:1;letter-spacing:-2px;margin:0 0 20px}
+.thanks-intro{font-size:clamp(20px,2.4vw,26px);font-weight:700;margin:0 0 12px;max-width:560px}
+.thanks-copy{font-size:18px;line-height:1.6;margin:0 0 28px;max-width:520px}
+.thanks-actions{display:flex;flex-wrap:wrap;align-items:center;gap:20px 32px}
+.thanks-button{display:inline-block;background:#153a6b;color:#fff !important;font-weight:800;padding:16px 28px;border-radius:6px;text-decoration:none}
+.thanks-button:hover{background:#153a6b;color:#fff !important}
+.thanks .text-link{font-weight:700;color:#153a6b;text-decoration:underline;text-underline-offset:4px}
+.thanks .text-link:hover{color:#153a6b}
+@media(max-width:600px){.thanks h1{letter-spacing:-1px}.thanks-button{width:100%;text-align:center}}

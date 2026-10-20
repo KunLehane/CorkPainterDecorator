@@ -1,0 +1,30 @@
+/* Painter blocks: proof of work and FAQs, in the same type and spacing as the mrr blocks. */
+.pcd-proof{background:#F2F3F4;padding:72px 24px;font-family:"Atkinson Hyperlegible",Arial,sans-serif;color:#3A3F44}
+.pcd-proof__inner,.pcd-faq__inner{max-width:1200px;margin:0 auto}
+.pcd-proof__head{max-width:720px;margin-bottom:32px}
+.pcd-proof__eyebrow{margin:0 0 10px;font:700 12px/1.4 Chivo,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#153a6b}
+.pcd-proof h2,.pcd-faq h2{margin:0 0 14px;font:700 clamp(28px,4vw,40px)/1.15 Chivo,Arial,sans-serif;color:#2B2F33}
+.pcd-proof__head p{margin:0;font-size:17px;line-height:1.7}
+.pcd-proof__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pcd-proof figure{margin:0;background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.pcd-proof figure a{display:block}
+.pcd-proof img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .3s ease}
+.pcd-proof figure a:hover img{transform:scale(1.03)}
+.pcd-proof figcaption{padding:14px 16px;font-size:15px;font-weight:700;color:#2B2F33}
+.pcd-proof__cta{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 0}
+.pcd-proof__link{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border-radius:3px;background:#153a6b;color:#fff!important;font:700 16px/1.2 Chivo,Arial,sans-serif;text-decoration:none}
+.pcd-proof__link:hover{background:#0f2c52}
+.pcd-proof__link--ghost{background:transparent;color:#153a6b!important;border:2px solid #153a6b}
+.pcd-proof__link--ghost:hover{background:#153a6b;color:#fff!important}
+.pcd-faq{padding:72px 24px;background:#fff;font-family:"Atkinson Hyperlegible",Arial,sans-serif;color:#3A3F44}
+.pcd-faq__list{max-width:860px;border-top:1px solid #DDE0E3}
+.pcd-faq details{border-bottom:1px solid #DDE0E3}
+.pcd-faq summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;position:relative;font:700 18px/1.4 Chivo,Arial,sans-serif;color:#2B2F33}
+.pcd-faq summary::-webkit-details-marker{display:none}
+.pcd-faq summary::after{content:"+";position:absolute;right:6px;top:16px;font-size:26px;color:#153a6b}
+.pcd-faq details[open] summary::after{content:"\2212"}
+.pcd-faq details p{margin:0 0 20px;font-size:17px;line-height:1.7}
+@media (max-width:900px){.pcd-proof__grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.pcd-proof,.pcd-faq{padding:52px 16px}.pcd-proof__grid{grid-template-columns:1fr}.pcd-proof__link{flex:1 1 100%}}
+/* Hero labels were the old accent colour; navy is too dark on the photo overlay. */
+.elementor-element-29d5051 .elementor-heading-title,.elementor-element-f0e7e23 .elementor-heading-title{color:#a9c1e3!important}

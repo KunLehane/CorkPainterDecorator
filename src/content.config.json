@@ -1,0 +1,19 @@
+{
+  "site": "https://corkpainterdecorator.ie",
+  "brand": "Cork Painter Decorator",
+  "accent": "#153a6b",
+  "shell": "privacy.html",
+  "blogIndex": null,
+  "cta": {
+    "heading": "Need a painter in Cork?",
+    "body": "Tell us what needs painting and where, send a few photos if you can, and get a written price before any work starts.",
+    "href": "/quote/",
+    "text": "Get a written quote",
+    "phone": "089 206 4575",
+    "tel": "+353892064575"
+  },
+  "footerLinks": [
+    { "text": "Get a Written Quote", "href": "/quote/", "afterHeading": "Useful Links" },
+    { "text": "FAQ", "href": "/faq/", "afterHeading": "Useful Links" }
+  ]
+}
