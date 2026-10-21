@@ -12,7 +12,12 @@ export async function onRequestPost({request,env,waitUntil}){
  const value=(key,max=200)=>typeof data[key]==='string'?data[key].trim().slice(0,max):'';
  const name=value('name'),phone=value('phone'),email=value('email'),eircode=value('eircode'),service=value('service'),message=value('message',2000),page=value('page');
  if(!name||phone.replace(/\D/g,'').length<7)return response(400,'Please enter your name and a valid phone number.');
- if(!env.RESEND_API_KEY||!env.LEAD_FROM)return response(503,'The enquiry form is being connected. Please call 089 470 4697.');
+ const record={name,phone,email,eircode,service,message,page,receivedAt:new Date().toISOString(),source:'corkpainterdecorator.ie website'};
+ // Older lead route kept as a backup: save to the LEADS store and post to the n8n webhook when they are set up.
+ let backupSaved=false;
+ if(env.LEADS){try{await env.LEADS.put(`lead:${record.receivedAt}:${crypto.randomUUID()}`,JSON.stringify(record),{expirationTtl:7776000});backupSaved=true;}catch(err){console.error('LEADS store failed',err);}}
+ if(env.LEAD_WEBHOOK){const hook=fetch(env.LEAD_WEBHOOK,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(record),signal:AbortSignal.timeout(8000)}).then(r=>{if(r.ok)backupSaved=true;}).catch(err=>console.error('Lead webhook failed',err));if(!env.RESEND_API_KEY)await hook;else waitUntil?.(hook);}
+ if(!env.RESEND_API_KEY||!env.LEAD_FROM)return backupSaved?response(200,'Your enquiry has been sent.',true):response(503,'The enquiry form is being connected. Please call 089 470 4697.');
  const recipients=[...new Set([env.LEAD_TO??RECIPIENT,'aidanlehane@gmail.com'])];
  const text=[['Name',name],['Phone',phone],['Email',email],['Eircode',eircode],['Service',service],['Message',message],['Page',page]].map(([k,v])=>`${k}: ${v||'Not supplied'}`).join('\n');
  // GHL sync is best-effort: it never blocks or fails the customer's submission.
