@@ -28,11 +28,3 @@
 @media (max-width:600px){.pcd-proof,.pcd-faq{padding:52px 16px}.pcd-proof__grid{grid-template-columns:1fr}.pcd-proof__link{flex:1 1 100%}}
 /* Hero labels were the old accent colour; navy is too dark on the photo overlay. */
 .elementor-element-29d5051 .elementor-heading-title,.elementor-element-f0e7e23 .elementor-heading-title{color:#a9c1e3!important}
-/* Van band on the home page */
-.pcd-van{background:#f3f1ee;padding:64px 20px}
-.pcd-van__inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:48px;align-items:center}
-.pcd-van__img{margin:0}.pcd-van__img img{display:block;width:100%;height:auto;border-radius:6px;box-shadow:0 18px 40px rgba(21,58,107,.18)}
-.pcd-van__copy h2{font:700 clamp(28px,3.2vw,40px)/1.15 Chivo,Arial,sans-serif;color:#1e2329;margin:8px 0 16px}
-.pcd-van__copy p{font-size:18px;line-height:1.65;color:#3a4048}
-.pcd-van .pcd-proof__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
-@media (max-width:860px){.pcd-van{padding:44px 16px}.pcd-van__inner{grid-template-columns:1fr;gap:28px}}
