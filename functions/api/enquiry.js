@@ -12,7 +12,7 @@ export async function onRequestPost({request,env,waitUntil}){
  const value=(key,max=200)=>typeof data[key]==='string'?data[key].trim().slice(0,max):'';
  const name=value('name'),phone=value('phone'),email=value('email'),eircode=value('eircode'),service=value('service'),message=value('message',2000),page=value('page');
  if(!name||phone.replace(/\D/g,'').length<7)return response(400,'Please enter your name and a valid phone number.');
- if(!env.RESEND_API_KEY||!env.LEAD_FROM)return response(503,'The enquiry form is being connected. Please call 089 206 4575.');
+ if(!env.RESEND_API_KEY||!env.LEAD_FROM)return response(503,'The enquiry form is being connected. Please call 089 470 4697.');
  const recipients=[...new Set([env.LEAD_TO??RECIPIENT,'aidanlehane@gmail.com'])];
  const text=[['Name',name],['Phone',phone],['Email',email],['Eircode',eircode],['Service',service],['Message',message],['Page',page]].map(([k,v])=>`${k}: ${v||'Not supplied'}`).join('\n');
  // GHL sync is best-effort: it never blocks or fails the customer's submission.
@@ -23,9 +23,9 @@ export async function onRequestPost({request,env,waitUntil}){
  }
  try{
   const sent=await fetch('https://api.resend.com/emails',{method:'POST',headers:{Authorization:`Bearer ${env.RESEND_API_KEY}`,'Content-Type':'application/json'},body:JSON.stringify({from:env.LEAD_FROM,to:recipients,subject:`New Cork Painter Decorator enquiry: ${service||'General'}`,text,...(email?{reply_to:email}:{})}),signal:AbortSignal.timeout(12000)});
-  if(!sent.ok)return response(502,'Your enquiry could not be sent. Please call 089 206 4575.');
+  if(!sent.ok)return response(502,'Your enquiry could not be sent. Please call 089 470 4697.');
   const receipt=await sent.json();if(!receipt.id)return response(502,'Unable to confirm sending. Please contact us directly.');
   return response(200,'Your enquiry has been sent.',true);
- }catch{return response(502,'Your enquiry could not be sent. Please call 089 206 4575.');}
+ }catch{return response(502,'Your enquiry could not be sent. Please call 089 470 4697.');}
 }
 export const onRequestGet=()=>new Response(null,{status:303,headers:{Location:'/contact/'}});

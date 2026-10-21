@@ -7,10 +7,10 @@
     title: 'Get a Written Price',
     body: 'Send a few photos of the job and get a written price before any work starts.',
     callLabel: 'Call Us',
-    tel: '+353892064575',
+    tel: '+353894704697',
     ctaLabel: 'Get a Quote',
     ctaHref: '/quote/',
-    phone: '089 206 4575',
+    phone: '089 470 4697',
     note: 'Cork city and county',
     css: '--cc-accent:#153a6b;--cc-accent-ink:#ffffff;--cc-dark:#2B2F33;--cc-text:#3A3F44;--cc-muted:#6B7177;--cc-bg:#ffffff;--cc-line:#E3E5E8;--cc-head:Chivo,Arial,sans-serif;--cc-body:"Atkinson Hyperlegible",Arial,sans-serif;--cc-radius:4px;--cc-title-size:26px;--cc-title-tt:none;--cc-title-w:700;--cc-eyebrow:#153a6b;'
   };

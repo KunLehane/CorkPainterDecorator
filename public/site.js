@@ -5,8 +5,8 @@ for(const form of document.querySelectorAll('[data-enquiry-form]')){
   const status=form.querySelector('.form-status'),button=form.querySelector('[type="submit"]');
   status.textContent='Sending your enquiry…';status.classList.remove('error');if(button)button.disabled=true;
   let redirecting=false;const fields=Object.fromEntries(new FormData(form));fields.page=location.pathname;
-  try{const response=await fetch('/api/enquiry',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(fields)});const result=await response.json();if(!response.ok||!result.ok)throw new Error(result.message||'Your enquiry could not be sent. Please call 089 206 4575.');form.reset();redirecting=true;try{sessionStorage.setItem('corkLead','1')}catch{}status.textContent='Thanks, your enquiry has been sent. Taking you to the next page…';location.assign('/thank-you/');}
-  catch(error){status.textContent=error.message||'Unable to send. Please call 089 206 4575.';status.classList.add('error');}
+  try{const response=await fetch('/api/enquiry',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(fields)});const result=await response.json();if(!response.ok||!result.ok)throw new Error(result.message||'Your enquiry could not be sent. Please call 089 470 4697.');form.reset();redirecting=true;try{sessionStorage.setItem('corkLead','1')}catch{}status.textContent='Thanks, your enquiry has been sent. Taking you to the next page…';location.assign('/thank-you/');}
+  catch(error){status.textContent=error.message||'Unable to send. Please call 089 470 4697.';status.classList.add('error');}
   finally{if(button&&!redirecting)button.disabled=false;}
  });
 }

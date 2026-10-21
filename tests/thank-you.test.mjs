@@ -22,9 +22,9 @@ test('site enquiry forms redirect to /thank-you/ only after a confirmed send',as
  assert.equal(s.button.disabled,true,'button stays disabled while redirecting');
 });
 test('site enquiry forms stay on the page and show the error when sending fails',async()=>{
- const s=siteSetup({ok:false,message:'Please call 089 206 4575.'});await s.run();
+ const s=siteSetup({ok:false,message:'Please call 089 470 4697.'});await s.run();
  assert.equal(s.redirected,null);assert.equal(s.flags.corkLead,undefined);assert.equal(s.reset,false);
- assert.equal(s.status.textContent,'Please call 089 206 4575.');assert.equal(s.classes.has('error'),true);assert.equal(s.button.disabled,false);
+ assert.equal(s.status.textContent,'Please call 089 470 4697.');assert.equal(s.classes.has('error'),true);assert.equal(s.button.disabled,false);
 });
 test('site enquiry forms treat a network error as a failure, not a success',async()=>{
  const s=siteSetup(new Error('offline'));await s.run();
