@@ -161,7 +161,7 @@ strong { font-weight: 600; }
 /* Sections */
 .section { padding: 56px 0; }
 .section-alt { background: var(--surface-100); }
-.section-cream { background: var(--cream); }
+.section-cream { background: var(--surface-100); }
 .section-head { max-width: 680px; margin-bottom: 32px; }
 .section-head p { color: var(--ink-muted); font-size: 1.1rem; }
 @media (min-width: 900px) { .section { padding: 88px 0; } }
