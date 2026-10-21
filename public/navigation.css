@@ -25,3 +25,8 @@
 }
 @media(max-width:1024px){.cr-navigation .cr-nav-icon{width:28px;height:28px;flex-basis:28px}}
 @media(min-width:1025px){.cr-navigation .cr-nav-trigger{position:relative}.cr-navigation .cr-nav-trigger[aria-expanded=true]::after{content:"";position:absolute;top:100%;left:0;right:0;height:40px}}
+
+/* Dropdown caret: a drawn chevron, not a text character (fonts render that as a low "v") */
+.cr-caret{display:inline-block;flex:none;width:7px;height:7px;margin-left:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease;vertical-align:middle}
+[aria-expanded=true]>.cr-caret{transform:translateY(2px) rotate(-135deg)}
+@media (hover:hover){.cr-nav-group:hover .cr-caret,.crr-location-menu:hover .cr-caret{transform:translateY(2px) rotate(-135deg)}}
