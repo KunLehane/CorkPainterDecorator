@@ -12,7 +12,7 @@ test('Whitechurch reuses the existing comparison grid after the bedroom on both 
     assert.match(figures.at(-2), /work-bedroom-before.webp/);
     const bathroom = figures.at(-1);
     assert.match(bathroom, /class="compare"/);
-    assert.match(bathroom, /<img src="\/images\/whitechurch-bathroom-after-window.webp"/);
+    assert.match(bathroom, /<img src="\/images\/whitechurch-bathroom-after-wide.webp"/);
     assert.match(bathroom, /<img class="before-image" src="\/images\/whitechurch-bathroom-before.webp"/);
     assert.match(bathroom, /<input type="range" min="0" max="100" value="50" aria-label="Compare the Whitechurch bathroom before and after">/);
     assert.match(bathroom, /class="tag before-tag">Before/);
@@ -28,7 +28,7 @@ test('homepage and portfolio index link to a labelled Whitechurch comparison', a
     assert.ok(section, `${file} needs a Whitechurch feature`);
     assert.ok(section.includes(`href="${route}"`));
     assert.match(section, /whitechurch-bathroom-before.webp/);
-    assert.match(section, /whitechurch-bathroom-after-window.webp/);
+    assert.match(section, /whitechurch-bathroom-after-wide.webp/);
     assert.match(section, /<figcaption>Before:/);
     assert.match(section, /<figcaption>After:/);
     assert.ok(!section.includes('\u2014'));
