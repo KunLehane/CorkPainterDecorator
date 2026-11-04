@@ -28,3 +28,31 @@
 @media (max-width:600px){.pcd-proof,.pcd-faq{padding:52px 16px}.pcd-proof__grid{grid-template-columns:1fr}.pcd-proof__link{flex:1 1 100%}}
 /* Hero labels were the old accent colour; navy is too dark on the photo overlay. */
 .elementor-element-29d5051 .elementor-heading-title,.elementor-element-f0e7e23 .elementor-heading-title{color:#a9c1e3!important}
+/* Whitechurch portfolio: shared site colours, type and quote buttons. */
+.pcd-project{padding:44px 24px 72px;background:#fff;color:#3a3f44;font-family:"Atkinson Hyperlegible",Arial,sans-serif}
+.pcd-project__inner{max-width:1200px;margin:0 auto}
+.pcd-project__crumbs{margin-bottom:32px;font-size:14px;line-height:1.8}
+.pcd-project__crumbs a{color:#153a6b;text-decoration:underline}
+.pcd-project h1,.pcd-project h2,.pcd-project h3{font-family:Chivo,Arial,sans-serif;color:#2b2f33}
+.pcd-project h1{max-width:900px;font-size:clamp(32px,5vw,56px);line-height:1.12;margin:10px 0 22px}
+.pcd-project h2{font-size:clamp(26px,3vw,38px);margin:0 0 24px}
+.pcd-project h3{font-size:22px;margin:0 0 12px}
+.pcd-project p{line-height:1.7}
+.pcd-project__intro{max-width:850px;font-size:19px;margin:0 0 32px}
+.pcd-project figure{margin:0;background:#f2f3f4;border-radius:6px;overflow:hidden}
+.pcd-project img{display:block;width:100%;height:auto}
+.pcd-project figcaption{padding:14px 18px;font-size:15px;line-height:1.5;font-weight:700}
+.pcd-project__section{margin-top:60px}
+.pcd-project__steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;padding-left:24px}
+.pcd-project__steps li{padding-left:8px}
+.pcd-project__gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.pcd-project__video{max-width:860px}
+.pcd-project__video video{display:block;width:100%;height:auto;aspect-ratio:860/480;background:#1c1f22;object-fit:contain}
+.pcd-project__cta{margin-top:60px;padding:32px;background:#f2f3f4;border-radius:6px}
+.pcd-whitechurch-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.pcd-whitechurch-pair img{aspect-ratio:16/9;object-fit:cover}
+.pcd-whitechurch-pair figure:nth-child(2) img{object-fit:contain;background:#f2f3f4}
+.pcd-whitechurch-feature .pcd-proof__head{max-width:820px}
+.pcd-whitechurch-feature{background:#fff}
+@media(max-width:800px){.pcd-project__gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.pcd-project__steps{grid-template-columns:1fr;gap:12px}}
+@media(max-width:600px){.pcd-project{padding:28px 16px 52px}.pcd-project__section{margin-top:40px}.pcd-project__gallery{gap:12px}.pcd-project figcaption{padding:12px;font-size:14px}.pcd-project__cta{padding:24px 16px}.pcd-whitechurch-pair{grid-template-columns:1fr;gap:18px}}
