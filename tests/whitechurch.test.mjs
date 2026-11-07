@@ -50,6 +50,6 @@ test('Whitechurch project is registered with factual copy and before and after p
   }
   assert.match(main, /<figcaption>Before:/);
   assert.match(main, /<figcaption>After:/);
-  assert.ok(!/<video\\b/.test(main), 'Whitechurch project page should not embed the walkthrough video');
+  assert.ok(!main.includes('<video'), 'Whitechurch project page should not embed the walkthrough video');
   assert.ok(!main.includes('whitechurch-video'), 'Walkthrough section should be removed');
 });
