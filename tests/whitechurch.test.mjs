@@ -34,7 +34,7 @@ test('homepage and portfolio index link to a labelled Whitechurch comparison', a
     assert.ok(!section.includes('\u2014'));
   }
 });
-test('Whitechurch project is registered with factual copy and all supplied media', async () => {
+test('Whitechurch project is registered with factual copy and before and after photographs', async () => {
   const pages = JSON.parse(await fs.readFile('src/pages.json', 'utf8'));
   const page = pages.find(p => p.path === route);
   assert.ok(page, 'Whitechurch project route must exist');
@@ -50,7 +50,6 @@ test('Whitechurch project is registered with factual copy and all supplied media
   }
   assert.match(main, /<figcaption>Before:/);
   assert.match(main, /<figcaption>After:/);
-  assert.match(main, /<video[^>]*controls[^>]*preload="none"/);
-  assert.ok(!/<video[^>]*autoplay/.test(main));
-  await fs.access('public/videos/whitechurch-bathroom.mp4');
+  assert.ok(!/<video\\b/.test(main), 'Whitechurch project page should not embed the walkthrough video');
+  assert.ok(!main.includes('whitechurch-video'), 'Walkthrough section should be removed');
 });
