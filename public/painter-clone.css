@@ -62,3 +62,7 @@
 .pcd-whitechurch-feature{background:#fff}
 @media(max-width:800px){.pcd-project__gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.pcd-project__steps{grid-template-columns:1fr;gap:12px}}
 @media(max-width:600px){.pcd-project{padding:28px 16px 52px}.pcd-project__section{margin-top:40px}.pcd-project__gallery{grid-template-columns:1fr;gap:18px}.pcd-project figcaption{padding:12px;font-size:14px}.pcd-project__cta{padding:24px 16px}.pcd-whitechurch-pair{grid-template-columns:1fr;gap:18px}}
+
+/* Preserve the full portrait photographs in the Blarney project. */
+.pcd-blarney-portraits img{aspect-ratio:9/16;object-fit:contain}
+.pcd-blarney-product{max-width:640px}
